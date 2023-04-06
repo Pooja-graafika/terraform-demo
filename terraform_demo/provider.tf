@@ -8,7 +8,7 @@ provider "aws" {
 # In order to keep the terraform state file remotely below block is used
 terraform {
   backend "s3" {
-    bucket = "my-remote-backend-bucket-06042023"
+    bucket = "my-remote-backend-bucket"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
