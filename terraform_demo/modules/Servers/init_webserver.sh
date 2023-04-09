@@ -11,4 +11,4 @@
   systemctl enable nginx
   
 # Print the hostname which includes instance details on nginx homepage  
-  sudo echo Hello from `hostname -f` and welcome to my demo & have a nice day!!!... > /usr/share/nginx/html/index.html
+  sudo echo Hello from `hostname -f` and welcome to my demo and have a nice day!!!... > /usr/share/nginx/html/index.html
