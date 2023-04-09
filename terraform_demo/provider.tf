@@ -8,8 +8,9 @@ provider "aws" {
 # In order to keep the terraform state file remotely below block is used
 terraform {
   backend "s3" {
-    bucket = "ENTER-YOUR-REMOTE-BACKEND-BUCKET"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
+    bucket         = "my-remote-backend-bucket-06042023"
+    key            = "terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-state-locking"
   }
 }
