@@ -1,0 +1,5 @@
+AWS_ACCESS_KEY = "ENTER-YOUR-ACCESS-KEY"
+AWS_SECRET_KEY = "ENTER-YOUR-SECRET-ACCESS-KEY"
+db_username    = "admin"
+db_password    = "password"
+environment    = "production"
