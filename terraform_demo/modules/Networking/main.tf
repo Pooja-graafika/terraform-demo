@@ -90,6 +90,7 @@ resource "aws_route_table" "private" {
   }
 }
 
+# Routing tables to route traffic for Private Database Subnet
 resource "aws_route_table" "private_db" {
   vpc_id = aws_vpc.vpc.id
 
