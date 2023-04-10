@@ -32,6 +32,6 @@ resource "aws_db_instance" "my_rds_database" {
   username               = var.db_username
   password               = var.db_password
   db_subnet_group_name   = aws_db_subnet_group.my_subnet_group.id
-  vpc_security_group_ids = [aws_security_group.my_db_sg.id]
+  vpc_security_group_ids = [aws_security_group.my_db_sg.id , var.ec2_security_groups_ids]
   skip_final_snapshot    = var.settings.database.skip_final_snapshot
 }
